@@ -7,7 +7,7 @@ import java.net.InetSocketAddress;
 import java.util.logging.Handler;
 
 public class SimpleHttpServer {
-    public static int DEFAULT_PORT = 7777;
+    public static int DEFAULT_PORT = 7070;
     public static int port;
     private HttpServer httpServer;
 

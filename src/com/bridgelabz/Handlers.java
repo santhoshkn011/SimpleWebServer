@@ -47,7 +47,7 @@ public class Handlers {
             URI requestedUri = exchange.getRequestURI();
             String query = requestedUri.getRawQuery();
             parseQuery(query, parameters);
-            String response = "";
+            String response = "This is a EchoGetHandler.";
             for(String key : parameters.keySet())
                 response += key + " = " + parameters.get(key) +"\n";
             exchange.sendResponseHeaders(200,response.length());
@@ -65,7 +65,7 @@ public class Handlers {
             BufferedReader br = new BufferedReader(isr);
             String query = br.readLine();
             parseQuery(query, parameters);
-            String response = "";
+            String response = "This is EchoPostHandler.";
             for(String key : parameters.keySet())
                 response += key + " = " + parameters.get(key) +"\n";
             exchange.sendResponseHeaders(200,response.length());
